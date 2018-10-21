@@ -1,0 +1,12 @@
+.mid{
+    margin-left:  40%;
+    margin-right: 30%;
+    margin-top: 15%;
+    margin-bottom: 40%;
+    /*display: list-item;*/
+    width: inherit;
+   
+}
+body{
+    background-color: #2e2e2e;
+}

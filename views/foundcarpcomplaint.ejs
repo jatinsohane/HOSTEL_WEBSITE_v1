@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOSTEL</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="/stylesheets/landing.css">-->
+        <link rel="stylesheet" href="/stylesheets/main1.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script><!--this is the cdn for making browser compatible-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> 
+    </head>
+    <body>
+     
+   
+   <div class="mid">
+   
+   <h2 class="ui horizontal divider header">
+  <i class="tag icon"></i>
+   Complaint Subject
+</h4>
+    <strong><p class="subject"><%=found.subject%></p></strong>
+<h3 class="ui horizontal divider header">
+  <i class="bar chart icon"></i>
+  Student Specification
+</h4>
+<table class="ui definition table">
+  <tbody>
+    <tr>
+      <td class="two wide column">Student Name</td>
+      <td><%=found.first_name%> <%=found.last_name%></td>
+      
+       <p >
+                        <div class="right floated"> <strong><%= moment(found.createdAt).fromNow() %></strong></em></div>
+          </p>
+    </tr>
+    <tr>
+      <td>Branch</td>
+      <td><%=found.branch%></td>
+    </tr>
+    <tr>
+      <td>Semester</td>
+      <td><%=found.semester%></td>
+    </tr>
+    <tr>
+      <td>Phone No.</td>
+      <td><%=found.phone_no%></td>
+    </tr>
+    
+     <tr>
+      <td>USN</td>
+      <td><%=found.usn%></td>
+    </tr>
+    
+    
+     <tr>
+      <td>Hostel Block & Room Number </td>
+      <td><%=found.block_room_no%></td>
+    </tr>
+    
+     <tr>
+      <td>Email id</td>
+      <td><%=found.email%></td>
+    </tr>
+    
+     <tr>
+      <td>Complaint Description</td>
+      <td><%=found.description%></td>
+    </tr>
+    
+  </tbody>
+</table>
+    
+</div>    
+    
+    </body>
+    </html>

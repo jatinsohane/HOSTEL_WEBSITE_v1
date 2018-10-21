@@ -1,0 +1,14 @@
+.mid{
+    margin-left:  40%;
+    margin-right: auto;
+    margin-top: 25%;
+    margin-bottom: 30%;
+    /*display: list-item;*/
+    width: inherit;
+   
+}
+
+body{
+     background:  url("http://www.scribendi.com/images/cms/thumbnails/An-Example-Complaint-Letter_720x370.jpg") no-repeat center center fixed;
+     background-size: cover;
+}

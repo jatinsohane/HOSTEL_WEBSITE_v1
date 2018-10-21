@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOSTEL</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="/stylesheets/landing.css">-->
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script><!--this is the cdn for making browser compatible-->
+    </head>
+    <body>
+  
+  <div class="ui attached right aligned inverted segment">
+      
+      <h3>
+        <!--<a href="/complaints/plumbing" class="item">-->
+           <i class="user icon "></i>
+                  Signed in as  <em><strong><%=currentUser.username%> </strong></em> 
+        <!--</a>    -->
+         
+    </h3> 
+      
+      <a href="/logout">
+               <i class="sign-out "></i>
+               Logout
+            </a>
+           
+      
+  </div>  
+   
+        
+  <!--      <div class="ui labeled icon menu">-->
+  <!--<a class="item">-->
+  <!--  <i class="gamepad icon"></i>-->
+  <!--  Games-->
+  <!--</a>-->
+  <!--<a class="item">-->
+  <!--  <i class="video camera icon"></i>-->
+  <!--  Channels-->
+  <!--</a>-->
+  <!--<a class="item">-->
+  <!--  <i class="video play icon"></i>-->
+  <!--  Videos-->
+  <!--</a>-->
+<div class="mid">
+    
+    
+<div class="ui huge vertical labeled icon menu">
+    <a class="item">
+    <h2>Complaint Type</h2>    
+  </a>
+  <a href="/complaints/electricity" class="item">
+    <i class="plug icon"></i>
+    Electricity
+  </a>
+  <a href="/complaints/plumbing" class="item">
+    <i class="shower icon"></i>
+    Plumbing
+  </a>
+  <a href="/complaints/carpentry" class="item">
+    <i class="wrench icon"></i>
+    Carpentry
+  </a>
+  
+  <a href="/complaints/mess" class="item">
+    <i class="utensil spoon icon"></i>
+    Mess
+  </a>
+  
+   <a href="/complaints/internet" class="item">
+    <i class="wifi icon"></i>
+    Internet
+  </a>
+   
+  <a href="/complaints/housekeeping" class="item">
+    <i class="home icon"></i>
+    House Keeping
+  </a>
+  
+  <a href="/complaints/security" class="item">
+    <i class="building icon"></i>
+    Security
+  </a>
+  
+   <a href="/complaints/others" class="item">
+    <i class="clipboard outline icon"></i>
+    Others
+  </a>
+  
+  <!--<a href="/logout">Logout</a>-->
+  
+</div>
+
+</div>
+    
+    
+    
+    
+    
+    
+    </body>
+    </html>

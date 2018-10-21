@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mess Complaints</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="/stylesheets/landing.css">-->
+        <link rel="stylesheet" href="/stylesheets/main1.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script><!--this is the cdn for making browser compatible-->
+    </head>
+    <body>
+
+
+
+<div class = "mid">
+    
+<div class="ui main text container">
+    
+    <div class="ui top  raised red attached segment">
+        <div class="ui huge header">Mess Complaints</div>
+        <div class="ui divided items">
+            <% messcomplaints.forEach(function(mess){ %>
+            <div class="item">
+                
+                
+                <div class="content">
+                    <a class="header" > <%= mess.subject %></a>
+                   
+                    <div class="description">
+                         <p><%- mess.description.substring(0,50)  %>....</p>
+                    </div>
+                    <div class="extra">
+                         <a class="ui floated basic violet button" href="/messcomplaints/<%=mess._id%>"> <!--HERE IT IS VERY NECESSARY TO CREATE A LINK TO FIND THE PARTICULAR COMPLAINT ID,OTHERWISE WE CANT ACCESS THAT COMPLAINT DETAILS-->
+                         Read More
+                         <i class="right chevron icon"></i>
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+      <div>
+    
+    
+    
+   
+   
+    <!--<a href="/blogs/<">Read More</a>-->
+    
+    
+</div>
+
+
+
+<% }) %>
+        </div>
+    </div>
+    
+</div>
+
+
+
+</div>
+
+</body>
+</html>
